@@ -119,6 +119,11 @@ strong { color: var(--ink); }
 .rows small { display: block; color: var(--muted); font-size: .88rem; }
 .panel-foot { margin-top: 14px; padding: 12px 14px; border-radius: 10px; background: var(--accent-soft); color: var(--ink); font-size: .95rem; }
 
+/* XML → čitateľná faktúra (efaktury) */
+.xml { margin: 12px 0 0; padding: 12px 14px; background: #1b1f24; color: #c9d4e3; border-radius: 10px; font: 12.5px/1.55 ui-monospace, "Cascadia Mono", Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+.arrow { display: flex; align-items: center; gap: 10px; margin: 14px 0 2px; color: var(--accent-ink); font-weight: 800; font-size: .95rem; }
+.arrow::before, .arrow::after { content: ""; flex: 1; height: 1px; background: var(--line-2); }
+
 /* ---------- sekcie ---------- */
 .section { padding: 72px 0; }
 .section--alt { background: var(--paper-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -130,6 +135,11 @@ strong { color: var(--ink); }
 .cards--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
 .card p:last-child { margin-bottom: 0; }
+.card--big { padding: 30px; display: flex; flex-direction: column; }
+.card--big h3 { font-size: 1.45rem; }
+.card--big .checks { margin: 16px 0 20px; }
+.card-price { margin: auto 0 0; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); }
+.card-price strong { font-size: 1.3rem; }
 .card-num { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: var(--accent-soft); color: var(--accent-ink); font-weight: 800; margin-bottom: 14px; }
 
 .steps { list-style: none; counter-reset: krok; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
